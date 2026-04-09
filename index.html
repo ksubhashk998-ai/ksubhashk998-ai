@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Subhash Portfolio</title>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { font-family: Arial, sans-serif; background:#0f172a; color:#fff; }
+    header { background:#1e293b; padding:20px; text-align:center; }
+    header h1 { font-size:2rem; }
+    nav a { margin:0 10px; color:#38bdf8; text-decoration:none; }
+
+    section { padding:40px; }
+    .container { max-width:900px; margin:auto; }
+
+    .card {
+      background:#1e293b;
+      padding:20px;
+      margin:15px 0;
+      border-radius:10px;
+      box-shadow:0 0 10px rgba(0,0,0,0.5);
+    }
+
+    button {
+      padding:10px 15px;
+      border:none;
+      background:#38bdf8;
+      color:#000;
+      cursor:pointer;
+      border-radius:5px;
+    }
+
+    footer { text-align:center; padding:20px; background:#1e293b; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Subhash K</h1>
+  <p>Aspiring Software Engineer</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="about">
+  <div class="container">
+    <h2>About Me</h2>
+    <p>I am a Computer Engineering student passionate about programming, Python, and software development.</p>
+  </div>
+</section>
+
+<section id="projects">
+  <div class="container">
+    <h2>Projects</h2>
+
+    <div class="card">
+      <h3>Python Translator</h3>
+      <p>English to Kannada translator using Python.</p>
+    </div>
+
+    <div class="card">
+      <h3>Machine Learning Basics</h3>
+      <p>Implemented basic ML algorithms like KNN.</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <h2>Contact Me</h2>
+    <p>Email: subhash@email.com</p>
+    <button onclick="showMessage()">Say Hello</button>
+    <p id="msg"></p>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 Subhash</p>
+</footer>
+
+<script>
+  function showMessage() {
+    document.getElementById("msg").innerText = "Thanks for visiting my portfolio!";
+  }
+</script>
+
+</body>
+</html>
